@@ -1,0 +1,571 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: auto;
+}
+nav{
+	background-color: #FF0000;
+	height:8vh;
+}
+header{
+	background-color:#FFFF00;
+	height:18vh;
+}
+p{
+	font-size: 10pt;
+}
+.caja1{
+	background-color: #00FFFF;
+	height:30vh;
+	width: 30vh;
+}
+a:active {
+  color: red;
+}
+.caja2{	
+	background-color:#FAEBD7;
+	height:30vh;
+	width: 30vh;
+}
+.caja2
+div,
+select {
+  margin: 10px;
+}
+
+/* Etiquetas para entradas marcadas */
+input:checked + label {
+  color: red;
+}
+
+/* Elemento Radio, cuando está marcado */
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+
+/* Elemento Checkbox, cuando está marcado */
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+
+/* Elementos Option, cuando se seleccionan */
+option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}
+.caja3{
+	background-color: #7FFFD4;
+	height:30vh;
+	width: 30vh;
+}
+input:default {
+  box-shadow: 0 0 2px 1px coral;
+}
+
+input:default + label {
+  color: coral;
+}
+.caja4 {
+	background-color: #B0E0E6;
+	height:30vh;
+	width: 30vh;
+	
+}
+:dir(ltr) {
+  background-color: yellow;
+}
+
+:dir(rtl) {
+  background-color: powderblue;
+}
+.caja5{
+	background-color: #BC8F8F;
+	height:30vh;
+	width: 30vh;
+	
+}
+
+input[type="text"]:disabled {
+  background: #ccc;
+}
+
+
+.caja6{
+	background-color: #F7931E;
+	height:30vh;
+	width: 30vh;
+}
+.box {
+  background: pink;
+  height: 80px;
+  width: 80px;
+}
+
+.box:empty {
+  background: lime;
+}
+
+
+
+.caja7{
+	background-color: #8CC63F;
+	height:30vh;
+	width: 30vh;
+}
+input:enabled {
+  color: #2b2;
+}
+
+input:disabled {
+  color: #aaa;
+}
+
+
+.caja8{
+	background-color: #FFF5EE;
+	height:30vh;
+	width: 30vh;
+	
+}
+@page :first {
+  margin-left: 50%;
+  margin-top: 50%;
+}
+
+p {
+  page-break-after: always;
+}
+
+
+.caja9{
+	background-color: #C0C0C0;
+	height:30vh;
+	width: 30vh;	
+}
+p.p1:first-child {
+  color: lime;
+  background-color: black;
+  padding: 5px;
+}
+
+.caja10{
+	background-color: #DEB887;
+	height:30vh;
+	width: 30vh;
+	
+}
+p.p2:first-of-type {
+  color: green;
+  font-style: italic;
+}
+.caja11{
+	background-color:#5F9EA0;
+	height:30vh;
+	width: 30vh;
+}
+#fullscreen:fullscreen {
+  padding: 42px;
+  background-color: pink;
+  border:2px solid #f00;
+  font-size: 200%;
+}
+
+#fullscreen:fullscreen > #h11{
+  color: red;
+}
+
+#fullscreen:fullscreen > #p11 {
+  color: darkred;
+}
+
+#fullscreen:fullscreen > button {
+  display: none;
+}
+.caja12{
+	background-color:#708090;
+	height:30vh;
+	width: 30vh;
+}
+.red-input:focus {
+  background: yellow;
+  color: red;
+}
+
+.blue-input:focus {
+  background: yellow;
+  color: blue;
+}
+.caja13{
+	background-color: #D2691E;
+	height:30vh;
+	width: 30vh;
+}
+a {
+  background-color: powderblue;
+  transition: background-color .5s;
+}
+
+a:hover {
+  background-color: gold;
+}
+.caja14{
+	background-color: #FF7F50;
+	height:30vh;
+	width: 30vh;
+}
+input:indeterminate + label {
+  background: lime;
+}
+.caja15{
+	background-color:#6495ED;
+	height:30vh;
+	width: 30vh;
+}
+li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+input {
+  border: 1px solid black;
+}
+
+input:in-range {
+  background-color: rgba(0, 260, 0, 0.25);
+}
+
+input:out-of-range {
+  background-color: rgba(260, 0, 0, 0.25);
+  border: 2px solid red;
+}
+
+input:in-range + label::after {
+  content: 'bien.';
+}
+
+input:out-of-range + label::after {
+  content: 'fuera de rango!';
+}
+.caja16{
+	background-color: #3FA9F5;
+	height:30vh;
+	width: 30vh;
+}
+input:invalid {
+  background-color: #ffdddd;
+}
+
+form:invalid {
+  border: 5px solid #ffdddd;
+}
+
+input:valid {
+  background-color: #ddffdd;
+}
+
+form:valid {
+  border: 5px solid #ddffdd;
+}
+
+input:required {
+  border-color: #800000;
+  border-width: 3px;
+}
+
+input:required:invalid {
+  border-color: #C00000;
+}
+.caja17{
+	background-color: #D2B48C;
+	height:30vh;
+	width: 30vh;
+}
+:lang(en) > q { quotes: '\201C' '\201D' '\2018' '\2019'; }
+:lang(fr) > q { quotes: '« ' ' »'; }
+:lang(de) > q { quotes: '»' '«' '\2039' '\203A'; }
+
+.caja18{
+	background-color: #D8BFD8;
+	height:30vh;
+	width: 30vh;
+}
+p:last-child {
+  color: lime;
+  background-color: black;
+  padding: 5px;
+}
+.caja19{
+	background-color: #3FA9F5;
+	height:30vh;
+	width: 30vh;
+}
+p:last-of-type {
+  color: green;
+  font-style: italic;
+}
+.caja20{
+	background-color: #808080;
+	height:30vh;
+	width: 30vh;
+}
+@page :left {
+  margin: 2in 3in;
+}
+.caja21{
+	background-color: #FFFFFF;
+	height:30vh;
+	width: 30vh;
+}
+a:link {
+  background-color: gold;
+  color: green;
+}
+.caja22{
+	background-color: #E6E6FA;
+	height:30vh;
+	width: 30vh;
+}
+fancy {
+  text-shadow: 2px 2px 3px gold;
+}
+
+/* elementos <p> que no están en la clase `.fancy` */
+p:not(.fancy) {
+  color: green;
+}
+
+/* Elementos que no son elementos <p> */
+body :not(p) {
+  text-decoration: underline;
+}
+
+/* Elementos que no son elementos <div> o <span> */
+body :not(div):not(span) {
+  font-weight: bold;
+}
+
+/* Elementos que no son `.crazy` o `.fancy` */
+/* Tenga en cuenta que esta sintaxis aún no está bien soportada. */
+body :not(.crazy, .fancy) {
+  font-family: sans-serif;
+}
+.caja23{
+	background-color: #F08080;
+	height:30vh;
+	width: 30vh;
+}
+html {
+  font-family: sans-serif;
+}
+
+span,
+div em {
+  padding: 5px;
+  border: 1px solid green;
+  display: inline-block;
+  margin-bottom: 3px;
+}
+
+.first span:nth-child(2n+1),
+.second span:nth-child(2n+1),
+.third span:nth-of-type(2n+1) {
+  background-color: lime;
+}
+.caja24{
+	background-color:#D3D3D3 ;
+	height:30vh;
+	width: 30vh;
+}
+table {
+  border: 1px solid blue;
+}
+
+/* Selecciona los últimos tres elementos */
+tr:nth-last-child(-n+3) {
+  background-color: pink;
+}
+
+/* Toma todos los elementos a partir del penúltimo elemento */
+tr:nth-last-child(n+2) {
+  color: blue;
+}
+
+/* Seleccione solo el penúltimo elemento */
+tr:nth-last-child(2) {
+  font-weight: 600;
+}
+.caja25{
+	background-color: #FFA07A;
+	height:30vh;
+	width: 30vh;
+}
+span:nth-last-of-type(2) {
+  background-color: lime;
+}
+.caja26{
+	background-color: #778899;
+	height:30vh;
+	width: 30vh;
+}
+* Párrafos impares */
+p:nth-of-type(2n+1) {
+  color: red;
+}
+
+/* Párrafos pares */
+p:nth-of-type(2n) {
+  color: blue;
+}
+
+/* Primer párrafo */
+p:nth-of-type(1) {
+  font-weight: bold;
+}
+.caja27{
+	background-color: #FAF0E6;
+	height:30vh;
+	width: 30vh;
+}
+main :only-child {
+  color: purple;
+}
+.caja28{
+	background-color: #66CDAA;
+	height:30vh;
+	width: 30vh;
+}
+main :only-of-type {
+  color: orange;
+}
+.caja29{
+	background-color: #F5FFFA;
+	height:30vh;
+	width: 30vh;
+}
+.caja30{
+	background-color: #FFE4E1;
+	height:30vh;
+	width: 30vh;
+}
+li {
+  list-style: none;
+  margin-bottom: 1em;
+}
+
+input {
+  border: 1px solid black;
+}
+
+input:in-range {
+  background-color: rgba(0, 255, 0, 0.25);
+}
+
+input:out-of-range {
+  background-color: rgba(255, 0, 0, 0.25);
+  border: 2px solid red;
+}
+
+input:in-range + label::after {
+  content: 'bien.';
+}
+
+input:out-of-range + label::after {
+  content: '¡fuera de rango!';
+}
+.caja31{
+	background-color: #FFE4B5;
+	height:30vh;
+	width: 30vh;
+}
+input { min-width: 25em; }
+input:-moz-read-only { background: cyan; }
+input:read-only { background: cyan; }
+
+p:-moz-read-only { background: lightgray; }
+p:read-only { background: lightgray; }
+p[contenteditable="true"] { color: blue; }
+
+.caja32{
+	background-color: #FFDEAD;
+	height:30vh;
+	width: 30vh;
+}
+input { min-width: 25em; }
+input:-moz-read-write { background: cyan; }
+input:read-write { background: cyan; }
+
+p:-moz-read-write { background: lightgray; }
+p:read-write { background: lightgray; }
+p[contenteditable="true"] { color: blue; }
+.caja33{
+	background-color: #808000;
+	height:30vh;
+	width: 30vh;
+}
+.caja34{
+	background-color: #EEE8AA;
+	height:30vh;
+	width: 30vh;
+}
+/* Selecciona cualquier página de la derecha al imprimir */
+@page :right {
+  margin: 2in 3in;
+}
+.caja35{
+	background-color: #98FB98;
+	height:30vh;
+	width: 30vh;
+}
+.caja36{
+	background-color: #AFEEEE;
+	height:30vh;
+	width: 30vh;
+}
+.caja37{
+	background-color: #FFF8DC;
+	height:30vh;
+	width: 30vh;
+}
+p:target {
+  background-color: gold;
+}
+
+/* Agrega un pseudo-elemento dentro del elemento de destino */
+p:target::before {
+  font: 70% sans-serif;
+  content: "►";
+  color: limegreen;
+  margin-right: .25em;
+}
+
+/* Estilo de elementos en cursiva dentro del elemento de destino */
+p:target i {
+  color: red;
+}
+.caja38{
+	background-color: #D8BFD8;
+	height:30vh;
+	width: 30vh;
+}
+.caja39{
+	background-color: #F5F5F5;
+	height:30vh;
+	width: 30vh;
+}
+a {
+  /* Especifique los valores predeterminados no transparentes a ciertas propiedades,
+     lo que les permite ser diseñado con el estado :visited */
+  background-color: white;
+  border: 1px solid white;
+}
+
+a:visited {
+  background-color: yellow;
+  border-color: hotpink;
+  color: hotpink;
+}
+
+div.:hover{
+	background-color: purple;
+}
